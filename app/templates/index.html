@@ -1,0 +1,6 @@
+<h1>Encuentas</h1>
+<ul>
+{% for poll in latest_polls %}
+    <li><a href="{% url 'details' poll.id %}">{{ poll.question }}</a></li>
+{% endfor %}
+</ul>
